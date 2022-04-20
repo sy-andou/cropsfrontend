@@ -1,0 +1,23 @@
+{
+  "Footer": {
+    "description": "Auto imported from components/Footer.vue"
+  },
+  "Header": {
+    "description": "Auto imported from components/Header.vue"
+  },
+  "Item": {
+    "description": "Auto imported from components/Item.vue"
+  },
+  "LoginForm": {
+    "description": "Auto imported from components/LoginForm.vue"
+  },
+  "NuxtLogo": {
+    "description": "Auto imported from components/NuxtLogo.vue"
+  },
+  "RegisterForm": {
+    "description": "Auto imported from components/RegisterForm.vue"
+  },
+  "Tutorial": {
+    "description": "Auto imported from components/Tutorial.vue"
+  }
+}

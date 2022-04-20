@@ -1,0 +1,51 @@
+[
+  {
+    "name": "cart",
+    "path": "/cart",
+    "component": "/workspace/pages/cart.vue",
+    "chunkName": "pages/cart",
+    "_name": "_42f39c56"
+  },
+  {
+    "name": "login",
+    "path": "/login",
+    "component": "/workspace/pages/login.vue",
+    "chunkName": "pages/login",
+    "_name": "_aa18caba"
+  },
+  {
+    "name": "ordered",
+    "path": "/ordered",
+    "component": "/workspace/pages/ordered.vue",
+    "chunkName": "pages/ordered",
+    "_name": "_2c05c127"
+  },
+  {
+    "name": "register",
+    "path": "/register",
+    "component": "/workspace/pages/register.vue",
+    "chunkName": "pages/register",
+    "_name": "_de6d514e"
+  },
+  {
+    "name": "thanks",
+    "path": "/thanks",
+    "component": "/workspace/pages/thanks.vue",
+    "chunkName": "pages/thanks",
+    "_name": "_409d2802"
+  },
+  {
+    "name": "detail-itemId",
+    "path": "/detail/:itemId?",
+    "component": "/workspace/pages/detail/_itemId.vue",
+    "chunkName": "pages/detail/_itemId",
+    "_name": "_7a41f125"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/workspace/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_3d6810e8"
+  }
+]
