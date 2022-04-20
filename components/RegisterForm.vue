@@ -74,7 +74,10 @@ export default {
           permission_id: this.loginCheck,
         };
         await this.$axios
-          .post("http://127.0.0.1:8000/api/auth/register/", sendData)
+          .post(
+            "https://cropsbackend.herokuapp.com/api/auth/register",
+            sendData
+          )
           .then(() => {
             alert("仮登録が完了しました。");
             this.$emit("registerd");

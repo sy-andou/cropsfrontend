@@ -56,7 +56,7 @@ export default {
           number: cartList.orderNumber,
           user_id: this.$auth.user.id,
         };
-        this.$axios.post("http://127.0.0.1:8000/api/order", sendData);
+        this.$axios.post("https://cropsbackend.herokuapp.com/api/order", sendData);
       });
       this.$store.commit("cart/resetCart");
       this.$router.push("/thanks");

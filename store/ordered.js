@@ -8,7 +8,7 @@ export const mutations = {
 }
 export const actions = {
   async getOrderedLists({commit}) {
-    const orderedData = await this.$axios.get("http://127.0.0.1:8000/api/order");
+    const orderedData = await this.$axios.get("https://cropsbackend.herokuapp.com/api/order");
     const orderedLists = orderedData.data.order;
     commit("setOrderedLists", orderedLists);
   },
