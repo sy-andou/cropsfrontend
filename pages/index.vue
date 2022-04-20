@@ -2,7 +2,7 @@
   <div class="index-wrapper">
     <div class="main-container">
       <img
-        v-bind:src="'https://cropsbackend.herokuapp.com/storage/crops2.jpeg'"
+        v-bind:src="'https://cropsbacket.s3.ap-northeast-3.amazonaws.com/crops2.jpeg'"
         class="index-img"
       />
       <h2>Fresh<br />Vegetable & Fruit</h2>
