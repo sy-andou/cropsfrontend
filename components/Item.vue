@@ -48,7 +48,6 @@ export default {
   align-items: center;
   width: 90%;
   margin: 0 auto;
-  padding: ;
 }
 .item-name,
 .item-price {
