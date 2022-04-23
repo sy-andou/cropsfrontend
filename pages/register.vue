@@ -20,4 +20,10 @@ export default {
   transform: translateY(-50%) translateX(-50%);
   width: 650px;
 }
+@media screen and (max-width: 650px) {
+  .register-wrapper {
+    transform: translateY(-50%) translateX(-50%);
+    width: 100%;
+  }
+}
 </style>

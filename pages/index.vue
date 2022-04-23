@@ -10,8 +10,12 @@
     <div>
       <h3>農作物一覧</h3>
     </div>
-    <div class="item-wrapper">
-      <div v-for="itemList in getSliceItemLists" v-bind:key="itemList.id">
+    <div class="item-list-wrapper">
+      <div
+        v-for="itemList in getSliceItemLists"
+        v-bind:key="itemList.id"
+        class="item-wrapper"
+      >
         <Item v-bind:item-list="itemList" />
       </div>
     </div>
@@ -113,7 +117,7 @@ h3:before {
 h3:before {
   right: 0;
 }
-.item-wrapper {
+.item-list-wrapper {
   display: flex;
   flex-wrap: wrap;
 }
@@ -122,5 +126,21 @@ h3:before {
   width: 100%;
   margin: 0 auto;
   padding: 0 0 0 0;
+}
+@media screen and (max-width: 500px) {
+  .index-img {
+    width: 70%;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  .item-list-wrapper {
+    flex-direction: column;
+    margin: 10px auto;
+  }
+  h3:before,
+  h3:after {
+    width: 26%;
+  }
 }
 </style>

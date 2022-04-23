@@ -58,4 +58,9 @@ export default {
   font-size: 20px;
   cursor: pointer;
 }
+@media screen and (max-width: 500px) {
+  .item-container {
+    margin: 10px auto;
+  }
+}
 </style>

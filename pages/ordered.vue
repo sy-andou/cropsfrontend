@@ -136,4 +136,17 @@ h3:before {
   color: white;
   background-color: firebrick;
 }
+@media screen and (max-width: 820px) {
+  .ordered-container {
+    flex-direction: column;
+  }
+  .ordered-data-wrapper {
+    margin: 10px;
+  }
+  .detail-router-btn {
+    position: static;
+    display: inline-block;
+    margin: 10px 0;
+  }
+}
 </style>

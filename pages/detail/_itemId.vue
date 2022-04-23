@@ -66,7 +66,8 @@ export default {
 }
 .item-img {
   height: auto;
-  width: 600px;
+  width: 100%;
+  max-width: 600px;
   box-shadow: 1px 1px 2px gray;
 }
 h5 {
@@ -91,5 +92,15 @@ select {
   border-radius: 5px;
   color: white;
   background-color: firebrick;
+}
+@media screen and (max-width: 1200px) {
+  .detail-container {
+    display: block;
+    width: 100%;
+    margin: 50px 10px;
+  }
+  .detail-menu {
+    margin: 30px 0;
+  }
 }
 </style>

@@ -27,7 +27,7 @@
           </div>
         </div>
       </div>
-      <div　v-else>
+      <div v-else>
         <p>カートは空です</p>
       </div>
       <div class="totalPrice-container">
@@ -56,7 +56,10 @@ export default {
           number: cartList.orderNumber,
           user_id: this.$auth.user.id,
         };
-        this.$axios.post("https://cropsbackend.herokuapp.com/api/order", sendData);
+        this.$axios.post(
+          "https://cropsbackend.herokuapp.com/api/order",
+          sendData
+        );
       });
       this.$store.commit("cart/resetCart");
       this.$router.push("/thanks");
@@ -149,5 +152,41 @@ select {
   color: white;
   background-color: firebrick;
   box-shadow: 1px 1px 2px maroon;
+}
+@media screen and (max-width: 1200px) {
+  .cart-container {
+    display: block;
+  }
+  .totalPrice-container {
+    position: static;
+    display: block;
+    transform: translateY(0) translateX(0);
+    margin: 0 0 0 auto;
+  }
+  .totalPrice-container > p,
+  .totalPrice-container > input {
+    text-align: right;
+  }
+}
+@media screen and (max-width: 620px) {
+  .cartList-container {
+    flex-direction: column;
+    margin: 10px 0;
+    background-color: white;
+    box-shadow: 1px 1px 2px gray;
+  }
+  .cartList-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+  }
+  .cartList-menu > span {
+    font-size: 15px;
+  }
+  .cartList-menu > p {
+    margin: 10px 0;
+    font-size: 15px;
+  }
 }
 </style>

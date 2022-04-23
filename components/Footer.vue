@@ -26,4 +26,12 @@ p {
   text-align: center;
   color: white;
 }
+@media screen and (max-width: 500px) {
+  .index-img {
+    width: 70%;
+  }
+  h2 {
+    font-size: 30px;
+  }
+}
 </style>

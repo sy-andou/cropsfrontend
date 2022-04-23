@@ -42,7 +42,7 @@ export default function (ctx, inject) {
   // Register strategies
   // laravelJWT
   $auth.registerStrategy('laravelJWT', new LaravelJWTScheme($auth, {
-  "url": "http://localhost:8000",
+  "url": "https://cropsbackend.herokuapp.com",
   "token": {
     "property": "access_token",
     "maxAge": 3600
@@ -57,16 +57,16 @@ export default function (ctx, inject) {
   "name": "laravelJWT",
   "endpoints": {
     "login": {
-      "url": "http://localhost:8000/api/auth/login"
+      "url": "https://cropsbackend.herokuapp.com/api/auth/login"
     },
     "refresh": {
-      "url": "http://localhost:8000/api/auth/refresh"
+      "url": "https://cropsbackend.herokuapp.com/api/auth/refresh"
     },
     "logout": {
-      "url": "http://localhost:8000/api/auth/logout"
+      "url": "https://cropsbackend.herokuapp.com/api/auth/logout"
     },
     "user": {
-      "url": "http://localhost:8000/api/auth/user"
+      "url": "https://cropsbackend.herokuapp.com/api/auth/user"
     }
   },
   "user": {
